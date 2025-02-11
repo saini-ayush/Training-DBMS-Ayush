@@ -1,0 +1,60 @@
+use test;
+
+CREATE TABLE IF NOT EXISTS unlabled_image_predictions(image_id int, score float);
+
+INSERT INTO unlabled_image_predictions (image_id, score)
+VALUES 
+    (1, ROUND(RAND(), 3)),
+    (2, ROUND(RAND(), 3)),
+    (3, ROUND(RAND(), 3)),
+    (4, ROUND(RAND(), 3)),
+    (5, ROUND(RAND(), 3)),
+    (6, ROUND(RAND(), 3)),
+    (7, ROUND(RAND(), 3)),
+    (8, ROUND(RAND(), 3)),
+    (9, ROUND(RAND(), 3)),
+    (10, ROUND(RAND(), 3)),
+    (11, ROUND(RAND(), 3)),
+    (12, ROUND(RAND(), 3)),
+    (13, ROUND(RAND(), 3)),
+    (14, ROUND(RAND(), 3)),
+    (15, ROUND(RAND(), 3)),
+    (16, ROUND(RAND(), 3)),
+    (17, ROUND(RAND(), 3)),
+    (18, ROUND(RAND(), 3)),
+    (19, ROUND(RAND(), 3)),
+    (20, ROUND(RAND(), 3)),
+    (21, ROUND(RAND(), 3)),
+    (22, ROUND(RAND(), 3)),
+    (23, ROUND(RAND(), 3)),
+    (24, ROUND(RAND(), 3)),
+    (25, ROUND(RAND(), 3)),
+    (26, ROUND(RAND(), 3)),
+    (27, ROUND(RAND(), 3)),
+    (28, ROUND(RAND(), 3)),
+    (29, ROUND(RAND(), 3)),
+    (30, ROUND(RAND(), 3)),
+    (31, ROUND(RAND(), 3)),
+    (32, ROUND(RAND(), 3)),
+    (33, ROUND(RAND(), 3)),
+    (34, ROUND(RAND(), 3)),
+    (35, ROUND(RAND(), 3)),
+    (36, ROUND(RAND(), 3)),
+    (37, ROUND(RAND(), 3)),
+    (38, ROUND(RAND(), 3)),
+    (39, ROUND(RAND(), 3)),
+    (40, ROUND(RAND(), 3)),
+    (41, ROUND(RAND(), 3)),
+    (42, ROUND(RAND(), 3)),
+    (43, ROUND(RAND(), 3)),
+    (44, ROUND(RAND(), 3)),
+    (45, ROUND(RAND(), 3)),
+    (46, ROUND(RAND(), 3)),
+    (47, ROUND(RAND(), 3)),
+    (48, ROUND(RAND(), 3)),
+    (49, ROUND(RAND(), 3)),
+    (50, ROUND(RAND(), 3));
+
+SELECT * FROM unlabled_image_predictions 
+ORDER BY image_id
+LIMIT 100;
